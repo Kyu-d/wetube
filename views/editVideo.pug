@@ -1,1 +1,9 @@
-p edit Videos
+extends layouts/main
+
+block content
+    .form-container
+        form(action=`/videos${routes.editVideo}`, method="post")
+            input(type="text", placeholder="Title", name="title")
+            textarea(name="description", placeholder="Description")
+            input(type="submit", valute="Update Video")
+        a.form-container_link.form-container_link--delete(href=`/videos${routes.deleteVideo}`) Delete Video
