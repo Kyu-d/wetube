@@ -4,10 +4,10 @@ import helmet from "helmet";
 import cookieParser from "cookie-parser";
 import bodyParser from "body-parser";
 import { localsMiddleware } from "./middlewares";
+import routes from "./routes";
 import userRouter from "./router/userRouter";
 import videoRouter from "./router/videoRouter";
 import globalRouter from "./router/globalRouter";
-import routes from "./routes";
 // const express = require('express');
 const app = express();
 
