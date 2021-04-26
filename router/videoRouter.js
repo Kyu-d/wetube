@@ -6,6 +6,8 @@ import {
 
 const videoRouter = express.Router();
 
+// video hello finished
+
 videoRouter.get(routes.upload, getUpload);
 videoRouter.post(routes.upload, postUpload);
 
